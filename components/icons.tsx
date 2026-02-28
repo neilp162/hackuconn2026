@@ -11,16 +11,16 @@ export function MountainLogo({ className }: { className?: string }) {
       aria-hidden="true"
     >
       <path
-        d="M20 4L36 34H4L20 4Z"
+        d="M20 2L36 34H4L20 2Z"
         className="fill-primary"
         strokeWidth="0"
       />
       <path
-        d="M20 4L28 20L24 18L20 22L16 18L12 20L20 4Z"
+        d="M20 2L28 18L24 16L20 20L16 16L12 18L20 2Z"
         className="fill-primary-foreground/30"
         strokeWidth="0"
       />
-      <circle cx="20" cy="10" r="2" className="fill-primary-foreground" />
+      <circle cx="20" cy="8" r="2" className="fill-primary-foreground" />
     </svg>
   )
 }

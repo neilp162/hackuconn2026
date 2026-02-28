@@ -20,7 +20,7 @@ export function PrereqTreePage({ subjectId, onBack, onSubjectSelect }: PrereqTre
   const totalCount = chain.length
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-transparent">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b-2 border-border">
         <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">

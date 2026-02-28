@@ -30,7 +30,7 @@ export function SignInPage({ onSignIn }: SignInPageProps) {
   }
 
   return (
-    <div className="min-h-screen bg-background flex flex-col items-center justify-center px-6 py-12 relative overflow-hidden">
+    <div className="min-h-screen bg-transparent flex flex-col items-center justify-center px-6 py-12 relative overflow-hidden">
       {/* Decorative mountain range at bottom */}
       <svg
         viewBox="0 0 1440 320"

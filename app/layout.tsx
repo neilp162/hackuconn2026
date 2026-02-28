@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#22c55e',
+  themeColor: '#E47571',
   width: 'device-width',
   initialScale: 1,
 }
@@ -32,7 +32,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dmSans.variable} ${spaceMono.variable} font-sans antialiased`}>
-        {children}
+        <div className="relative z-10">
+          {children}
+        </div>
         <Analytics />
       </body>
     </html>

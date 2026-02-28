@@ -29,7 +29,7 @@ export function DashboardPage({ onSubjectClick, onSignOut }: DashboardPageProps)
   })).filter(c => c.subjects.length > 0)
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-transparent">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b-2 border-border">
         <div className="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
@@ -150,7 +150,7 @@ export function DashboardPage({ onSubjectClick, onSignOut }: DashboardPageProps)
         {/* Explore Subjects */}
         <section>
           <div className="flex items-center gap-2 mb-4">
-            <BookOpen className="size-4 text-primary" />
+            <BookOpen className="size-4 text-red-500" />
             <h2 className="text-base font-bold text-foreground tracking-tight">Explore Subjects</h2>
           </div>
 
@@ -167,8 +167,8 @@ export function DashboardPage({ onSubjectClick, onSignOut }: DashboardPageProps)
                       onClick={() => onSubjectClick(subject.id)}
                       className="group flex items-start gap-3 p-4 rounded-xl border-2 border-border bg-card text-left hover:border-primary hover:shadow-[4px_4px_0px_0px] hover:shadow-primary/15 transition-all"
                     >
-                      <div className="size-9 rounded-lg bg-secondary flex items-center justify-center shrink-0 group-hover:bg-primary/10 transition-colors">
-                        <SubjectIcon type={subject.icon} className="size-4 text-primary" />
+                      <div className="size-9 rounded-lg bg-red-200 flex items-center justify-center shrink-0 group-hover:bg-red-300 transition-colors">
+                        <SubjectIcon type={subject.icon} className="size-4 text-black" />
                       </div>
                       <div className="min-w-0">
                         <h4 className="font-bold text-sm text-foreground group-hover:text-primary transition-colors">
